@@ -56,7 +56,6 @@
                     <configuration>
                         <suiteXmlFiles>
                             <suiteXmlFile>testng.xml</suiteXmlFile>
-                            <id>regression</id>
                         </suiteXmlFiles>
                         <goal>test</goal>
                     </configuration>
