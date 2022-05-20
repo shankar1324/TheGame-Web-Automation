@@ -11,8 +11,8 @@ import utilities.CommonFunctions;
 
 @CucumberOptions(
         plugin = {"pretty",
-                "html:target/cucumber.html",
-                "json:target/cucumber.json"
+                "html:target/cucumber-reports/cucumber.html",
+                "json:target/cucumber-reports/cucumber.json"
         },
         features = {"src/test/resources/features"},
         glue = {"stepDefinitions","utilities"},
