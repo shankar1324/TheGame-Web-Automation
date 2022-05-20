@@ -47,7 +47,7 @@
   
   <profiles>
     <profile>
-        <id>all-browsers-remote</id>
+        <id>regression</id>
         <build>
             <plugins>
                 <plugin>
