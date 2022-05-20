@@ -2,11 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT" verbose="10">
   <test thread-count="5" name="Regression Test(failed)" verbose="10">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="runner.TestRunner">
         <methods>
-          <include name="runScenario" invocation-numbers="4"/>
+          <include name="setUpBrowser"/>
+          <include name="runScenario" invocation-numbers="1 4"/>
           <include name="tearDownClass"/>
+          <include name="closeBrowser"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- runner.TestRunner -->

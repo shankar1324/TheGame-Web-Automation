@@ -17,4 +17,4 @@ Feature: SignUp
 		
 		Examples:
 		|	username	|	password	|
-		|	shankar12	| test123		|
+		|	shankar13	| test123		|

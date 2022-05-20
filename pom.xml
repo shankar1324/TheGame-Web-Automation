@@ -40,4 +40,24 @@
 </dependency>
 
   </dependencies>
+  
+  <profiles>
+    <profile>
+        <id>all-browsers-remote</id>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <configuration>
+                        <suiteXmlFiles>
+                            <suiteXmlFile>test-suites/all-browsers-remote.xml</suiteXmlFile>
+                        </suiteXmlFiles>
+                        <goal>test</goal>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+</profiles>
 </project>
